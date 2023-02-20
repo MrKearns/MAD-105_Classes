@@ -1,14 +1,10 @@
-class employee (var firstName: String,
-                var lastName: String,
-                var number: Int,
-                var shift: Int) {
-
-    init {
-        println("Employee name" $firstName $lastName)
-    }
+class employee (var firstName: String? = "xxxx",
+                var lastName: String? = "xxxx",
+                var number: Int? = 0,
+                var shift: Int?= 0 ) {
 
     fun printAll(){
-        println(firstName + lastName + number.toString() + shift.toString())
+        println("EMP #: " + number.toString() + "\n" + firstName + " " + lastName + "\nShift: " + shift.toString())
     }
 
 

@@ -1,7 +1,18 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+   val employee1 = employee("Jeff", "Lastname", 101,2)
+   val employee2 = employee("Sara", "Surname", 102,1)
+   val employee3 = employee("Mike", "Secondname", 103,3)
+   val employee4 = employee()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+
+   println("---- Employee List ----")
+   employee1.printAll()
+   println("\n")
+   employee2.printAll()
+   println("\n")
+   employee3.printAll()
+   println("\n")
+   employee4.printAll()
+
+
 }
